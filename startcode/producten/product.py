@@ -11,3 +11,14 @@ class Product:
         prijs = prijs.replace(",", ".")
         prijs = float(prijs)
         return prijs
+
+    def __eg__(self, ander_product):
+        self.prijs = ander_product.prijs
+
+        if self.titel == ander_product.titel:
+            if self.link == ander_product.link:
+                if self.prijs == ander_product.prijs:
+                    if self.categorie == ander_product.categorie:
+                        return True
+
+        return False

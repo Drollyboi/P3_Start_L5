@@ -1,4 +1,5 @@
 from product import Product
+import pytest
 
 
 def test_gelijk_bij_zelfde_titel_en_link():
